@@ -1,0 +1,59 @@
+HTML
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лаборатори 04: Dashboard Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <!-- 1. Хажуугийн цэс (Flexbox) -->
+        <aside class="sidebar">
+            <div class="logo">
+                <h2>AdminPanel</h2>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#" class="active">Хяналтын самбар</a>
+                <a href="#">Оюутнууд</a>
+                <a href="#">Хичээлүүд</a>
+                <a href="#">Тохиргоо</a>
+            </nav>
+        </aside>
+
+        <!-- 2. Үндсэн контент хэсэг -->
+        <main class="main-content">
+            <!-- Дээд толгой (Flexbox) -->
+            <header class="top-header">
+                <h1>Хяналтын самбар</h1>
+                <div class="user-profile">
+                    <span>Болдбаатар Б.</span>
+                </div>
+            </header>
+
+            <!-- Статистик картууд (CSS Grid) -->
+            <section class="stats-grid">
+                <div class="card">
+                    <h3>Нийт оюутан</h3>
+                    <p class="number">120</p>
+                </div>
+                <div class="card">
+                    <h3>Ирцийн хувь</h3>
+                    <p class="number">94.5%</p>
+                </div>
+                <div class="card">
+                    <h3>Идэвхтэй даалгавар</h3>
+                    <p class="number">8</p>
+                </div>
+                <div class="card">
+                    <h3>Шинэ мэдэгдэл</h3>
+                    <p class="number">3</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>
